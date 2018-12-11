@@ -4,6 +4,9 @@
 #include <QWizardPage>
 #include <QMessageBox>
 #include <QDateTime>
+#include <QFileDialog>
+#include <QProcess>
+
 
 namespace Ui {
   class Selector;
@@ -19,11 +22,18 @@ public:
 
 private slots:
   void on_Cancel_clicked();
-
-  void on_pushButton_clicked();
+  void on_Install_clicked();
+  void on_DeviceButton_clicked();
 
 private:
   Ui::Selector *ui;
+
+  QString hostname;
+  QString date;
+  QString filename;
+  const QString title = "Select a Device";
+  const QString dir = "/dev";
+
 };
 
 #endif // SELECTOR_H

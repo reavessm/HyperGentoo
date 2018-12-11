@@ -57,7 +57,7 @@
     </property>
     <layout class="QHBoxLayout" name="Buttons">
      <item>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="Install">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
          <horstretch>0</horstretch>
@@ -155,6 +155,32 @@
       <widget class="QTextEdit" name="HostNameValue">
        <property name="placeholderText">
         <string>gentoo.local</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>560</y>
+      <width>511</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="Device">
+     <item>
+      <widget class="QPushButton" name="DeviceButton">
+       <property name="text">
+        <string>Choose a Device</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="DevicePath">
+       <property name="placeholderText">
+        <string>/dev/null</string>
        </property>
       </widget>
      </item>

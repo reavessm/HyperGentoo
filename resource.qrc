@@ -3,5 +3,6 @@
         <file>Images/gentoo.png</file>
         <file>Images/blank.png</file>
         <file>Images/logo.png</file>
+        <file>Scripts/testecho.sh</file>
     </qresource>
 </RCC>
