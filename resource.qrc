@@ -4,5 +4,6 @@
         <file>Images/blank.png</file>
         <file>Images/logo.png</file>
         <file>Scripts/testecho.sh</file>
+        <file>Scripts/install.sh</file>
     </qresource>
 </RCC>

@@ -32,7 +32,8 @@ void Selector::on_Install_clicked()
 
   QProcess* process = new QProcess(this);
   //process->setArguments(QStringList() << ":/Scripts/testecho.sh");
-  process->setArguments(QStringList() << "/home/reavessm/Src/HyperGentoo/Scripts/testecho.sh");
+  process->setArguments(QStringList() <<
+                        "/home/reavessm/Src/HyperGentoo/Scripts/testecho.sh");
   process->setProgram("bash");
   QProcessEnvironment env = QProcessEnvironment::systemEnvironment();
   env.insert("QTTestFileName", filename);
