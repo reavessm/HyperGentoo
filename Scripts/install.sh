@@ -8,6 +8,33 @@ case $RAND in
   0)
     GENTOO_MIRROR=http://gentoo.mirrors.easynews.com/linux/gentoo/
     ;;
+  1)
+    GENTOO_MIRROR=ftp://ftp.gtlib.gatech.edu/pub/gentoo
+    ;;
+  2)
+    GENTOO_MIRROR=http://www.gtlib.gatech.edu/pub/gentoo
+    ;;
+  3)
+    GENTOO_MIRROR=rsync://rsync.gtlib.gatech.edu/gentoo
+    ;;
+  4)
+    GENTOO_MIRROR=ftp://ftp.ussg.iu.edu/pub/linux/gentoo
+    ;;
+  5)
+    GENTOO_MIRROR=http://lug.mit.edu/gentoo
+    ;;
+  6)
+    GENTOO_MIRROR=http://gentoo.osuosl.org/
+    ;;
+  7)
+    GENTOO_MIRROR=http://mirrors.rit.edu/gentoo/
+    ;;
+  8)
+    GENTOO_MIRROR=ftp://mirrors.rit.edu/gentoo/
+    ;;
+  9)
+    GENTOO_MIRROR=http://mirror.lug.udel.edu/pub/gentoo/
+    ;;
   *) 
     GENTOO_MIRROR=http://gentoo.mirrors.easynews.com/linux/gentoo/
     ;;
@@ -24,10 +51,10 @@ INSTALL_PREP=false
 INSTALL_CHROOT=false
 
 # Gentoo Options
-ROOT_DISK_PARTITION=/dev/sdb # change to $QTFileName
-GRUB_DISK=/dev/sdb
+ROOT_DISK_PARTITION=$QTFileName
+GRUB_DISK=$ROOT_DISK_PARTITION
 ROOT_PARTITION_FS_TYPE=ext4
-HOSTNAME=gentoo
+HOSTNAME=$QTHostName
 DOMAINNAME=localdomain
 ROOT_PASSWORD=Gamecocks14!
 INSTALL_KERNEL=false
@@ -237,6 +264,9 @@ EOF
 while getopts "hicd:s:n:m:gj:k" OPTION; do
     case $OPTION in
         i)  INSTALL_PREP=true
+            INSTALL_CHROOT=true
+            INSTALL_KERNEL=true
+            INSTALL_GRUB=true
             ;;
 
         c)  INSTALL_CHROOT=true

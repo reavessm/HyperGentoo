@@ -50,7 +50,7 @@
     <property name="geometry">
      <rect>
       <x>1060</x>
-      <y>790</y>
+      <y>610</y>
       <width>421</width>
       <height>121</height>
      </rect>
@@ -87,8 +87,8 @@
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>160</y>
+      <x>1200</x>
+      <y>10</y>
       <width>331</width>
       <height>321</height>
      </rect>
@@ -163,8 +163,8 @@
    <widget class="QWidget" name="horizontalLayoutWidget_2">
     <property name="geometry">
      <rect>
-      <x>90</x>
-      <y>560</y>
+      <x>1020</x>
+      <y>340</y>
       <width>511</width>
       <height>41</height>
      </rect>
@@ -185,6 +185,34 @@
       </widget>
      </item>
     </layout>
+   </widget>
+   <widget class="QTextEdit" name="Output">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>19</y>
+      <width>591</width>
+      <height>1121</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="documentTitle">
+     <string>Output</string>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+    <property name="overwriteMode">
+     <bool>false</bool>
+    </property>
+    <property name="placeholderText">
+     <string>Click 'Install' to see output over here</string>
+    </property>
    </widget>
   </widget>
  </widget>
