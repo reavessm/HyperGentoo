@@ -9,19 +9,19 @@ case $RAND in
     GENTOO_MIRROR=http://gentoo.mirrors.easynews.com/linux/gentoo/
     ;;
   1)
-    GENTOO_MIRROR=ftp://ftp.gtlib.gatech.edu/pub/gentoo
+    GENTOO_MIRROR=ftp://ftp.gtlib.gatech.edu/pub/gentoo/
     ;;
   2)
-    GENTOO_MIRROR=http://www.gtlib.gatech.edu/pub/gentoo
+    GENTOO_MIRROR=http://www.gtlib.gatech.edu/pub/gentoo/
     ;;
   3)
-    GENTOO_MIRROR=rsync://rsync.gtlib.gatech.edu/gentoo
+    GENTOO_MIRROR=rsync://rsync.gtlib.gatech.edu/gentoo/
     ;;
   4)
-    GENTOO_MIRROR=ftp://ftp.ussg.iu.edu/pub/linux/gentoo
+    GENTOO_MIRROR=ftp://ftp.ussg.iu.edu/pub/linux/gentoo/
     ;;
   5)
-    GENTOO_MIRROR=http://lug.mit.edu/gentoo
+    GENTOO_MIRROR=http://lug.mit.edu/gentoo/
     ;;
   6)
     GENTOO_MIRROR=http://gentoo.osuosl.org/
